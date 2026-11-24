@@ -2,13 +2,13 @@ Zona Arcade es una aplicación web personal con estética arcade oscura y neón 
 
 ## Capturas de pantalla
 
-![Página principal de Zona Arcade](images/screenshots/principal.png)
-![Minijuego Lluvia de Billetes](images/screenshots/billetes.png)
-![Minijuego El Ahorcado](images/screenshots/ahorcado.png)
-![Minijuego Tres en Raya](images/screenshots/tresEnRaya.png)
-![Minijuego Buscaminas](images/screenshots/buscaminas.png)
-![Minijuego Adivina el Número](images/screenshots/adivinaNumero.png)
-![Minijuego Simón Dice](images/screenshots/simonDice.png)
+![Página principal de Zona Arcade](screenshots/principal.png)
+![Minijuego Lluvia de Billetes](screenshots/billetes.png)
+![Minijuego El Ahorcado](screenshots/ahorcado.png)
+![Minijuego Tres en Raya](screenshots/tresEnRaya.png)
+![Minijuego Buscaminas](screenshots/buscaminas.png)
+![Minijuego Adivina el Número](screenshots/adivina.png)
+![Minijuego Simón Dice](screenshots/simon.png)
 
 ## Funcionalidades y minijuegos
 
@@ -42,4 +42,4 @@ Este proyecto es completamente frontend y no requiere servidor backend ni base d
 Autor: Isaac Espinosa Acevedo.  
 Correo electrónico: isaacespi96@gmail.com  
 
-Este proyecto es de uso personal y educativo. Todos los derechos reservados.
+Este proyecto es de uso personal y educativo. Totalmente realizado a mano, sin código proporcionado por ninguna inteligencia artificial, solo como herramienta. Todos los derechos reservados.
