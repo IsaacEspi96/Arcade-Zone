@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Buscaminas - Zona Arcade</title>
+    <meta lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Isaac EA">
+    <meta name="copyright" content="&copy, 2026 todos los derechos reservados">
+    <meta name="keywords" content="buscaminas">
+    <meta name="date" content="2026-06-25">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="buscaminas.css">
+</head>
+<body>
+    <div id="info">
+        <label for="dificultad">Escoja la dificultad:</label>
+        <select id="dificultad">
+            <option id="facil" value="6" selected>Fácil (6x6 5 Bombas)</option>
+            <option id="intermedio" value="9">Intermedio (9x9 12 Bombas)</option>
+            <option id="dificil" value="12">Difícil (12x12 23 Bombas)</option>
+        </select>
+
+        <div id="resultado">
+        </div>
+
+        <div id="bandera">
+            <img id="flagGrande" src="flag.png" alt="Bandera" />
+        </div>
+
+        <div id="frase">
+            Haga click en la bandera y luego en una casilla para marcarla
+        </div>
+
+        <input type="button" id="reiniciar" value="Reiniciar" />
+    </div>
+
+    <div id="tablero">
+    </div>
+
+    <a href="../index.html" class="btn-volver">
+        <i class="bi bi-arrow-left"></i> Volver al inicio
+    </a>
+
+    <script src="buscaminas.js"></script>
+</body>
+</html>

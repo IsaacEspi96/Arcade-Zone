@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12121f;
+    background-image: radial-gradient(circle at top, #1f1f3a 0%, #0d0d17 100%);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.2rem;
+    color: #00ffcc;
+    text-shadow: 3px 3px 0px #ff007f;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+header p {
+    color: #a0a0c0;
+    font-size: 1.1rem;
+}
+
+.grid-juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.tarjeta {
+    background-color: #1c1c30;
+    border: 3px solid #2e2e4d;
+    border-radius: 15px;
+    padding: 25px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.buscaminas:hover {
+    border-color: #ff4757;
+    box-shadow: 0 10px 25px rgba(255, 71, 87, 0.3);
+}
+
+.tres-raya:hover {
+    border-color: #1e90ff;
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.3);
+}
+
+.ahorcado:hover {
+    border-color: #ffa502;
+    box-shadow: 0 10px 25px rgba(255, 165, 2, 0.3);
+}
+
+.billetes:hover {
+    border-color: #2ed573;
+    box-shadow: 0 10px 25px rgba(46, 213, 115, 0.3);
+}
+
+.adivina:hover {
+    border-color: #a55eea;
+    box-shadow: 0 12px 25px rgba(165, 94, 234, 0.25);
+}
+
+.simon:hover {
+    border-color: #ff2a85;
+    box-shadow: 0 12px 25px rgba(255, 42, 133, 0.25);
+}
+
+.icono {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #b8b8d4;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.buscaminas:hover .icono {
+    color: #ff4757;
+}
+
+.tres-raya:hover .icono {
+    color: #1e90ff;
+}
+
+.ahorcado:hover .icono {
+    color: #ffa502;
+}
+
+.billetes:hover .icono {
+    color: #2ed573;
+}
+
+.adivina:hover .icono {
+    color: #a55eea;
+}
+
+.simon:hover .icono {
+    color: #ff2a85;
+}
+
+.tarjeta:hover .icono {
+    transform: scale(1.15);
+}
+
+.tarjeta h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #b8b8d4;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-jugar {
+    background-color: #2e2e4d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.buscaminas:hover .btn-jugar { background-color: #ff4757; }
+.tres-raya:hover .btn-jugar { background-color: #1e90ff; }
+.ahorcado:hover .btn-jugar { background-color: #ffa502;}
+.billetes:hover .btn-jugar { background-color: #2ed573;}
+.adivina:hover .btn-jugar { background-color: #a55eea; }
+.simon:hover .btn-jugar { background-color: #ff2a85; }
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #6c6c8a;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

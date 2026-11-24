@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12121f;
+    background-image: radial-gradient(circle at top, #1f1f3a 0%, #0d0d17 100%);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#areaJuego {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid #2ed573;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 12px 30px rgba(46, 213, 115, 0.2);
+    background-image: url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#capaCubo, #capaGotas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#capaCubo {
+    z-index: 100;
+}
+
+#capaGotas {
+    z-index: 50;
+}
+
+#cubo {
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-image: url(img/manos.WebP);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: yellow;
+    font-size: xx-large;
+    font-family: Courier;
+    text-align: center;
+}
+
+.gota {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    background-image: url(img/billetes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#errores {
+    position: relative;
+    z-index: 120;
+    display: inline-flex;
+    gap: 8px;
+    margin: 15px;
+    padding: 8px 14px;
+    background-color: rgba(18, 18, 31, 0.85);
+    border: 2px solid #2e2e4d;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    color: #2ed573;
+}
+
+#inicio, #final {
+    position: absolute;
+    z-index: 200;
+    width: 500px;
+    min-height: 340px;
+    padding: 35px 30px;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(28, 28, 48, 0.96);
+    border: 3px solid #2ed573;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#inicio h1, #final h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.35rem;
+    color: #00ffcc;
+    text-shadow: 2px 2px 0px #ff007f;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+#inicio p, #final p {
+    font-size: 1rem;
+    color: #d0d0eb;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #2ed573;
+    color: #12121f;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #00ffcc;
+    transform: translateY(-2px);
+}
+
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1c1c30;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 2px solid #2e2e4d;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #2e2e4d;
+    border-color: #00ffcc;
+    color: #00ffcc;
+    transform: translateY(-2px);
+}

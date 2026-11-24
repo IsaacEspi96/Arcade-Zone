@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Adivina el Número</title>
+    <meta lang="es">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Isaac EA">
+    <meta name="copyright" content="&copy, 2026 todos los derechos reservados">
+    <meta name="keywords" content="adivina">
+    <meta name="date" content="08-06-2026">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="adivinar.css" media="all" />
+
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Adivina el número (del 1 al 100)</h1>
+
+        <form onsubmit="return false;">
+            <div id="configuracion">
+                <label for="dificultad">Escoja una dificultad</label>
+                <select id="dificultad">
+                    <option value="5">Difícil: 5 intentos</option>
+                    <option value="7">Intermedio: 7 intentos</option>
+                    <option value="10">Fácil: 10 intentos</option>
+                </select>
+
+                <input type="button" value="Jugar" OnClick="iniciar_juego()">
+            </div>
+
+            <div id="juego">
+                <input id="numero_usuario" type="number" min="1" max="100" placeholder="Introduzca un número">
+                <br />
+                <input type="button" value="Probar" OnClick="evaluar()">
+                <div id="aviso_input"></div>
+            </div>
+        </form>
+
+        <div id="mensaje"></div>
+
+        <div id="fin_juego">
+            <p id="texto_fin"></p>
+            <input type="button" value="Jugar otra vez" OnClick="reiniciar()">
+        </div>
+    </div>
+
+    <a href="../index.html" class="btn-volver">
+        <i class="bi bi-arrow-left"></i> Volver al inicio
+    </a>
+
+    <script src="adivinar.js"></script>
+
+</body>
+</html>

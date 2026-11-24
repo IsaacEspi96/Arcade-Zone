@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Arcade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MKn5NWVBEuQXJE7TSKSgPUmMiSCmVTfCsR+VSSeQpHnoyJQZZFn/kBn+Ht5jZDPQ" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-+PW0IDVGGwmpaBQvcXY+W0BcpHpITFB3dSfSoGvDdHtLbrLpSbpGcvtQRM/BJpz+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="arcade.css">
+
+</head>
+<body>
+
+    <header>
+        <h1> <i class="bi bi-joystick"></i> ARCADE ZONE</h1>
+        <p id="subtitulo">Elige un minijuego y demuestra tu habilidad</p>
+    </header>
+
+    <main class="grid-juegos">
+        
+        <!-- Juego 1: Buscaminas -->
+        <a href="buscaminas/index.html" class="tarjeta buscaminas">
+            <div>
+                <span class="icono"> <i class="bi bi-flag-fill"></i> </span>
+                <h2>Buscaminas</h2>
+                <p>Despeja el tablero con lógica y cuidado. Un paso en falso y... ¡BOOM!</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+        <!-- Juego 2: Tres en raya -->
+        <a href="tres-en-raya/index.html" class="tarjeta tres-raya">
+            <div>
+                <span class="icono"> <i class="bi bi-x-lg"></i> <i class="bi bi-circle"></i> </span>
+                <h2>Tres en Raya</h2>
+                <p>El clásico duelo de estrategia. Consigue alinear tres fichas antes que tu rival.</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+        <!-- Juego 3: Ahorcado -->
+        <a href="ahorcado/index.html" class="tarjeta ahorcado">
+            <div>
+                <span class="icono"> <i class="bi bi-person-standing"></i> </span>
+                <h2>El Ahorcado</h2>
+                <p>Adivina la palabra secreta letra a letra antes de quedarte sin intentos.</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+        <!-- Juego 4: Atrapa billetes -->
+        <a href="atrapa-billetes/index.html" class="tarjeta billetes">
+            <div>
+                <span class="icono"> <i class="bi bi-cash-stack"></i> </span>
+                <h2>Lluvia de Billetes</h2>
+                <p>Usa las flechas para mover la mano y atrapa todo el dinero antes de perder tus vidas.</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+        <!-- Juego 5: Simón Dice -->
+        <a href="simon/index.html" class="tarjeta simon">
+            <div>
+                <span class="icono"> <i class="bi bi-palette"></i> </span>
+                <h2>Simón Dice</h2>
+                <p>Memoriza la secuencia de colores y repite el orden sin equivocarte.</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+        <!-- Juego 6: Adivina el número -->
+        <a href="adivinar/index.html" class="tarjeta adivina">
+            <div>
+                <span class="icono"> <i class="bi bi-123"></i> </span>
+                <h2>Adivina el Número</h2>
+                <p>Piensa bien y adivina el número del 1 al 100 antes de quedarte sin intentos.</p>
+            </div>
+            <span class="btn-jugar">Jugar ahora</span>
+        </a>
+
+    </main>
+
+    <script>
+        const subtitulo = document.getElementById('subtitulo');
+        const tarjetas = document.querySelectorAll('.tarjeta');
+
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener('mouseenter', () => {
+                const nombreJuego = tarjeta.querySelector('h2').innerText;
+                subtitulo.innerText = `¿Listo para jugar a ${nombreJuego}?`;
+                subtitulo.style.color = '#00ffcc';
+            });
+
+            tarjeta.addEventListener('mouseleave', () => {
+                subtitulo.innerText = 'Elige un minijuego y demuestra tu habilidad';
+                subtitulo.style.color = '#a0a0c0';
+            });
+        });
+    </script>
+
+</body>
+</html>

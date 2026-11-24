@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #12121f;
+    background-image: radial-gradient(circle at top, #1f1f3a 0%, #0d0d17 100%);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: 280px;
+    min-height: 420px;
+    background-color: #1c1c30;
+    border: 3px solid #ff4757;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 12px 30px rgba(255, 71, 87, 0.18);
+}
+
+label[for="dificultad"] {
+    font-weight: 600;
+    color: #00ffcc;
+    font-size: 0.95rem;
+}
+
+#dificultad {
+    background-color: #12121f;
+    color: #ffffff;
+    border: 2px solid #2e2e4d;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#tablero {
+    width: 560px;
+    height: 560px;
+    background-color: #1c1c30;
+    border: 3px solid #ff4757;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(255, 71, 87, 0.22);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.casilla, .vacia, .casillaBomba {
+    border: 1px solid #3a3a5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #262640;
+    color: #ff4757;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.casilla:hover, .vacia:hover, .casillaBomba:hover {
+    background-color: #323254;
+}
+
+#bomba {
+    width: 80%;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+#bandera {
+    justify-content: center;
+    display: flex;
+}
+
+#flagGrande {
+    width: 65px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#flagGrande:hover {
+    transform: scale(1.1);
+}
+
+#flag {
+    width: 80%;
+    pointer-events: none;
+    position: absolute;
+}
+
+#explosion, #confeti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#resultado {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #00ffcc;
+    text-align: center;
+    min-height: 30px;
+}
+
+#frase {
+    font-size: 0.85rem;
+    color: #b8b8d4;
+    text-align: center;
+    line-height: 1.4;
+}
+
+#reiniciar {
+    background-color: #ff4757;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#reiniciar:hover {
+    background-color: #00ffcc;
+    color: #12121f;
+    transform: translateY(-2px);
+}
+
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #1c1c30;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border: 2px solid #2e2e4d;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #2e2e4d;
+    border-color: #00ffcc;
+    color: #00ffcc;
+    transform: translateY(-2px);
+}
