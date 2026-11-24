@@ -42,4 +42,4 @@ Este proyecto es completamente frontend y no requiere servidor backend ni base d
 Autor: Isaac Espinosa Acevedo.  
 Correo electrónico: isaacespi96@gmail.com  
 
-Este proyecto es de uso personal y educativo. Totalmente realizado a mano, sin código proporcionado por ninguna inteligencia artificial, solo como herramienta. Todos los derechos reservados.
+Este proyecto es de uso personal y educativo. Totalmente realizado a mano, sin código proporcionado por ninguna inteligencia artificial excepto la imagen de fondo del minijuego "Lluvia de billetes", solo como herramienta. Todos los derechos reservados.
